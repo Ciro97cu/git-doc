@@ -24,6 +24,7 @@ terminologia: se un termine è qui, si usa sempre questa parola negli appunti.
 - **rebase** — riapplicare i commit di un branch su un'altra base, riscrivendo la storia.
 - **stash** — deposito temporaneo di modifiche non ancora committate.
 - **tag** — nome fisso assegnato a un commit, di solito per le release (es. `v1.0.0`).
+- **SemVer (Semantic Versioning)** — schema di versionamento `MAJOR.MINOR.PATCH` con regole precise su quando incrementare ogni numero.
 - **remote** — una copia del repo su un altro server (es. GitHub).
 - **origin** — nome di default del remoto principale.
 - **upstream** — il branch remoto a cui un branch locale è collegato.

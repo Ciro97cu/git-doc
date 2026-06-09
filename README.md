@@ -28,6 +28,7 @@ ma usabili anche come reference rapida durante il lavoro.
 | 13 | [Alias](13-alias.md) | abbreviare i comandi |
 | 14 | [GitHub](14-github.md) | clone, remote, push, fetch, pull, PR, fork |
 | 15 | [Terminale](15-terminale.md) | comandi shell base |
+| 16 | [SemVer](16-semver.md) | versionamento semantico `MAJOR.MINOR.PATCH` |
 
 ## File di supporto
 
