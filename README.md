@@ -11,11 +11,23 @@ ma usabili anche come reference rapida durante il lavoro.
 
 ## Indice topic
 
-> La sequenza viene definita man mano, in base al materiale.
-
 | # | File | Argomento |
 |---|------|-----------|
-| — | —    | (da popolare) |
+| 01 | [Introduzione](01-introduzione.md) | Cos'è Git, Git vs GitHub, config nome/email |
+| 02 | [Repository](02-repository.md) | `init`, `status`, cos'è un repo |
+| 03 | [Commit](03-commit.md) | `add`, `commit`, `--amend`, commit atomico, messaggi |
+| 04 | [Log e Diff](04-log-diff.md) | `log`, `diff` e le sue varianti |
+| 05 | [.gitignore](05-gitignore.md) | regole e pattern per ignorare file |
+| 06 | [Branch](06-branch.md) | HEAD, `branch`, `checkout`, `switch`, rinomina |
+| 07 | [Merge](07-merge.md) | merge commit, fast-forward, conflitti |
+| 08 | [Annullare](08-annullare.md) | detached HEAD, `restore`, `reset`, `revert` |
+| 09 | [Stash](09-stash.md) | salvare modifiche temporanee |
+| 10 | [Rebase](10-rebase.md) | rebase, interattivo, force-with-lease |
+| 11 | [Tag](11-tag.md) | tag lightweight/annotated, SemVer |
+| 12 | [Interni di Git](12-interni-git.md) | cartella `.git`, objects, SHA-1, reflog |
+| 13 | [Alias](13-alias.md) | abbreviare i comandi |
+| 14 | [GitHub](14-github.md) | clone, remote, push, fetch, pull, PR, fork |
+| 15 | [Terminale](15-terminale.md) | comandi shell base |
 
 ## File di supporto
 
