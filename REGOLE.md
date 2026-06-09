@@ -43,3 +43,11 @@ Link ad altri file di appunti.
 ```
 
 Le sezioni vuote per un dato topic si possono omettere: non vanno riempite a forza.
+
+## File errori.md
+
+Indice di triage per messaggi di errore: ogni voce quota il **messaggio esatto**
+come lo stampa Git (regola 1), poi causa, fix e link al topic. La spiegazione
+completa resta nel topic (regola 7); `errori.md` è solo l'accesso rapido a partire
+dal messaggio. Differenza con il [playbook](playbook.md): il playbook parte da
+"voglio fare X", `errori.md` parte da "ho ricevuto il messaggio Y".

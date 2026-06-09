@@ -37,3 +37,5 @@ terminologia: se un termine è qui, si usa sempre questa parola negli appunti.
 - **blob** — oggetto Git che contiene il contenuto di un file.
 - **tree** — oggetto Git che rappresenta una directory.
 - **reflog** — registro locale delle posizioni passate di HEAD; serve a recuperare lavoro perso.
+- **blame** — comando che mostra, riga per riga, l'ultimo commit che ha toccato un file.
+- **ORIG_HEAD** — riferimento al punto in cui era HEAD prima di un'operazione rischiosa (merge, reset); utile per tornare indietro.

@@ -23,3 +23,4 @@
   - [Regole](REGOLE.md)
   - [Glossario](glossario.md)
   - [Playbook](playbook.md)
+  - [Errori comuni](errori.md)

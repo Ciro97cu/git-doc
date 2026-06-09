@@ -41,6 +41,22 @@ git diff a1b2c3d e4f5g6h          # tra due commit
 `--staged` e `--cached` sono equivalenti. Al posto degli hash si possono usare
 nomi di branch o tag.
 
+## git blame
+Mostra, per ogni riga di un file, l'ultimo commit che l'ha modificata: hash,
+autore, data. Utile per capire chi ha introdotto una riga e quando.
+
+| Comando | Cosa fa |
+|---------|---------|
+| `git blame <file>` | Riga per riga: commit, autore, data |
+| `git blame -L 10,20 <file>` | Solo le righe 10–20 |
+
+```bash
+git blame app.js
+git blame -L 30,45 app.js   # solo una porzione
+```
+Sola lettura: non modifica nulla.
+
 ## Collegamenti
 - [Commit](03-commit.md)
 - [Branch](06-branch.md)
+- Ricetta pronta: [Playbook](playbook.md)

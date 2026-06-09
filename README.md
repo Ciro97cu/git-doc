@@ -16,7 +16,7 @@ ma usabili anche come reference rapida durante il lavoro.
 | 01 | [Introduzione](01-introduzione.md) | Cos'è Git, Git vs GitHub, config nome/email |
 | 02 | [Repository](02-repository.md) | `init`, `status`, cos'è un repo |
 | 03 | [Commit](03-commit.md) | `add`, `commit`, `--amend`, commit atomico, messaggi |
-| 04 | [Log e Diff](04-log-diff.md) | `log`, `diff` e le sue varianti |
+| 04 | [Log e Diff](04-log-diff.md) | `log`, `diff`, `blame` |
 | 05 | [.gitignore](05-gitignore.md) | regole e pattern per ignorare file |
 | 06 | [Branch](06-branch.md) | HEAD, `branch`, `checkout`, `switch`, rinomina |
 | 07 | [Merge](07-merge.md) | merge commit, fast-forward, conflitti |
@@ -34,6 +34,7 @@ ma usabili anche come reference rapida durante il lavoro.
 - [REGOLE.md](REGOLE.md) — le regole di qualità che ogni appunto deve rispettare.
 - [glossario.md](glossario.md) — termini Git (EN) spiegati in italiano semplice.
 - [playbook.md](playbook.md) — ricette pronte: problema reale → comandi esatti.
+- [errori.md](errori.md) — messaggi di errore di Git → causa e fix.
 
 ## Convenzioni
 

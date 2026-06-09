@@ -127,3 +127,67 @@ git restore file.txt             # ⚠️ scarta le modifiche non salvate (non r
 
 - Nota: `restore <file>` ⚠️ è distruttivo se le modifiche non erano in un commit.
 - Approfondimento: [Annullare](08-annullare.md).
+
+### Ho committato sul branch sbagliato (non pushato)
+
+```bash
+# esempio: il commit è finito su "main" ma doveva stare su "feature"
+git switch -c feature        # crea "feature" col commit appena fatto
+git switch main
+git reset --hard HEAD~1      # ⚠️ toglie il commit da main
+```
+
+- Nota: ⚠️ `reset --hard` su `main` solo se quel commit **non** è ancora pushato.
+- Approfondimento: [Branch](06-branch.md), [Annullare](08-annullare.md).
+
+### Annullare un merge
+
+```bash
+git merge --abort            # DURANTE un conflitto: torna a prima del merge
+git reset --hard ORIG_HEAD   # ⚠️ DOPO un merge già concluso (non pushato)
+```
+
+- Nota: `ORIG_HEAD` = dov'era HEAD prima dell'operazione. ⚠️ `reset --hard` solo
+  in locale, non su merge già pushati (lì usare `revert`).
+- Approfondimento: [Merge](07-merge.md), [Annullare](08-annullare.md).
+
+### Devo fare pull ma ho modifiche locali a metà
+
+```bash
+git stash
+git pull
+git stash pop
+```
+
+- Nota: **safe**. Evita l'errore "local changes would be overwritten".
+- Approfondimento: [Stash](09-stash.md).
+
+### Recuperare un file appena cancellato
+
+```bash
+git restore --source=HEAD <file>     # cancellato ma non committato
+git restore --source=HEAD~1 <file>   # se la cancellazione è già stata committata
+```
+
+- Nota: **safe** (riprende il file da un commit).
+- Approfondimento: [Annullare](08-annullare.md).
+
+### Cambiare l'URL del remoto (es. https → ssh)
+
+```bash
+git remote -v                                       # vedi l'URL attuale
+git remote set-url origin git@github.com:utente/repo.git
+```
+
+- Nota: **safe**.
+- Approfondimento: [GitHub](14-github.md).
+
+### Chi ha cambiato questa riga
+
+```bash
+git blame <file>            # per ogni riga: commit, autore, data
+git blame -L 10,20 <file>   # solo le righe 10–20
+```
+
+- Nota: **safe** (sola lettura).
+- Approfondimento: [Log e Diff](04-log-diff.md).
