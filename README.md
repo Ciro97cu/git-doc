@@ -28,3 +28,14 @@ ma usabili anche come reference rapida durante il lavoro.
 - Commit in stile [Conventional Commits](https://www.conventionalcommits.org/)
   (`docs:`, `fix:`, ...).
 - Comandi pericolosi marcati con ⚠️.
+
+## Anteprima locale
+
+Il sito è generato con [Docsify](https://docsify.js.org/) (nessuna build).
+Per vederlo in locale serve un server statico (non basta aprire il file):
+
+```bash
+npx serve .          # poi aprire l'indirizzo mostrato
+# oppure
+python3 -m http.server
+```
